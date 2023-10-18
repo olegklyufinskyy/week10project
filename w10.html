@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Club Members</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <style>
+        body {
+            background-color: gray;
+        }
+        #table-container {
+            margin-top: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Motorcycle Club Members</h1>
+        <form id="memberForm" class="mb-4">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Name" id="name" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Motorcycle Model" id="motorcycle" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Riding Experience" id="experience" required>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Add Member</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="table-container">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Motorcycle Model</th>
+                        <th>Riding Experience</th>
+                    </tr>
+                </thead>
+                <tbody id="memberTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="w10.js"></script>
+</body>
+</html>
